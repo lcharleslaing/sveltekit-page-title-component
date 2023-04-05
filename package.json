@@ -1,0 +1,28 @@
+{
+  "name": "sveltekit-page-title-component",
+  "version": "2.0.0",
+  "description": "Auto-populate your Sveltekit Routes with a page title component that can be completely customized",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go": "npx sveltekit-page-title-component && echo %ERRORLEVEL%"
+  },
+  "bin": {
+    "sveltekit-page-title-component": "./index.js"
+  },
+  "keywords": [
+    "svelte",
+    "sveltekit",
+    "component",
+    "page-title"
+  ],
+  "author": "Lee Charles Laing <lcharleslaing@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.79.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^7.1.4",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

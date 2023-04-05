@@ -1,0 +1,15 @@
+sveltekit-page-title-component/
+┣ src/
+┃ ┣ routes/
+┃ ┃ ┣ about/
+┃ ┃ ┃ ┗ +page.svelte
+┃ ┃ ┣ home/
+┃ ┃ ┃ ┗ +page.svelte
+┃ ┃ ┗ +layout.svelte
+┃ ┗ PageTitle.svelte
+┣ .gitignore
+┣ index.js
+┣ package-lock.json
+┣ package.json
+┣ README.md
+┗ rollup.config.js
