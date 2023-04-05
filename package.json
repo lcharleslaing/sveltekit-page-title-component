@@ -1,6 +1,6 @@
 {
   "name": "sveltekit-page-title-component",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Auto-populate your Sveltekit Routes with a page title component that can be completely customized",
   "main": "index.js",
   "scripts": {

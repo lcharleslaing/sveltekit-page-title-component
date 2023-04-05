@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-function updateAllPages(dirPath) {
+async function updateAllPages(dirPath) {
     const srcDir = path.join(dirPath, "src", "routes");
 
     const updatePageFile = (filePath) => {
@@ -41,7 +41,7 @@ function updateAllPages(dirPath) {
     searchDirectory(srcDir);
 }
 
-function updateFileContent(fileContent) {
+async function updateFileContent(fileContent) {
     const pageTitle = `
 <!-- to set a custom title, use the commented version below -->
 <!-- <PageTitle customTitle="Your Custom Title" /> -->
@@ -90,7 +90,7 @@ function updateFileContent(fileContent) {
 
     return updatedContent;
 }
-function createPageTitleComponent(dirPath) {
+async function createPageTitleComponent(dirPath) {
     // Create the src/lib/components directory if it doesn't exist
     const componentsDir = path.join(dirPath, "src", "lib", "components");
     if (!fs.existsSync(componentsDir)) {
